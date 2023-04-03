@@ -10,20 +10,29 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import pe.senati.service.UserServiceImpl;
+
 @SuppressWarnings("deprecation")
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter
 {
 	@Autowired
+	private UserServiceImpl userServiceImpl;
+	
+	@Autowired
 	private CustomSuccesHandler customSuccesHandler;
 	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception 
 	{
+		/*
 		auth.inMemoryAuthentication().withUser("carlos").password("$2a$10$b2cE/OGbONqNs41A8Pb6gew7tz3aa6ifUwMg36TCo5oWg7PtVlRUu").roles("CORREDOR");
 		auth.inMemoryAuthentication().withUser("roberto").password("$2a$10$qFRGFUg2lOP43HW5frkViuewwhwg0DIWyzi3wNFvsLKXMEpE2dSHm").roles("LIDER");
 		auth.inMemoryAuthentication().withUser("paola").password("$2a$10$cwjlrqLD9LTEb2ykIqLYUeswTjd9bvNKA/e0NPmN9Cx61cGYXuT9G").roles("JEFE","LIDER");
+		*/
+		
+		auth.userDetailsService(userServiceImpl);
 	}
 	
 	@Override

@@ -20,7 +20,7 @@
 	<!-- Formulario Spring -->
 	<form:form name="" method="post" action="" modelAttribute="copa">
 		Nombre de la Copa: <form:input type="text" path="nombreCo" placeholder="Ejm. Copa Detroit"/> <br><br>
-		Valor del Premio $/: <form:input type="number" path="vpremio"/> <br><br>
+		Valor del Premio $/: <form:input type="number" path="vpremio" placeholder="Monto total"/> <br><br>
 		Fecha de Apertura: <form:input type="date" path="fapertura"/> <br><br>
 		Fecha de Clausura: <form:input type="date" path="fclausura"/> <br><br>
 		

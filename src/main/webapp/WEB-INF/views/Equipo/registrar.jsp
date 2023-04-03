@@ -20,7 +20,7 @@
 	<!-- Formulario Spring -->
 	<form:form name="" method="post" action="" modelAttribute="equipo">
 		Nombre del Equipo: <form:input type="text" path="nombreDep" placeholder="Ejm. Herbalife"/> <br><br>
-		Telefono: <form:input type="text" path="telefono"/> <br><br>
+		Telefono: <form:input type="text" path="telefono" placeholder="Empresa / Dueño Equipo"/> <br><br>
 		
 		<button type="submit">Guardar</button>
 		<button type="button" onclick="location.href='/senati/equipo/listar'">Cancelar</button>

@@ -20,7 +20,7 @@
 	<!-- Formulario Spring -->
 	<form:form name="" method="post" action="" modelAttribute="conyuge">
 		Nombres y Apellidos: <form:input type="text" path="nombreAp" placeholder="Ejm. Sofia Vergara"/> <br><br>
-		DNI: <form:input type="text" path="dni"/> <br><br>
+		DNI: <form:input type="text" path="dni" placeholder="Introduce DNI del conyuge"/> <br><br>
 		Celular: <form:input type="text" path="celular" placeholder="Ejm. 997384690"/> <br><br>
 		
 		Seleccionar Corredor:
