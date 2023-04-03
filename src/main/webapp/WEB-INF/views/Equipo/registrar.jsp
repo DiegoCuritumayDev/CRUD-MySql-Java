@@ -15,7 +15,7 @@
 </head>
 <body>
 	<div align="center">
-	<h3>¡Registrar Nuevo Equipo!</h3>
+	<h2>¡Registrar Nuevo Equipo!</h2>
 	
 	<!-- Formulario Spring -->
 	<form:form name="" method="post" action="" modelAttribute="equipo">
