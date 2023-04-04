@@ -76,6 +76,7 @@ transition: .5s;
 margin-top: 40px;
 letter-spacing: 4px;
 border-style: none;
+cursor: pointer;
 }
 
 .login-box button:hover {

@@ -42,7 +42,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 			.antMatchers("/home").permitAll()
 			.antMatchers("/corredor/listar").access("hasRole('CORREDOR') or hasRole('LIDER') or hasRole('JEFE')")
 			.antMatchers("/corredor/registrar","/corredor/editar/*").access("hasRole('LIDER')")
-			.antMatchers("/corredor/borrar/*").access("hasRole('JEFE')");
+			.antMatchers("/corredor/borrar/*").access("hasRole('JEFE')")
+			.antMatchers("/conyuge/listar").access("hasRole('CORREDOR') or hasRole('LIDER') or hasRole('JEFE')")
+			.antMatchers("/conyuge/registrar","/conyuge/editar/*").access("hasRole('LIDER')")
+			.antMatchers("/conyuge/borrar/*").access("hasRole('JEFE')")
+			.antMatchers("/auto/listar").access("hasRole('CORREDOR') or hasRole('LIDER') or hasRole('JEFE')")
+			.antMatchers("/auto/registrar","/auto/editar/*").access("hasRole('LIDER')")
+			.antMatchers("/auto/borrar/*").access("hasRole('JEFE')")
+			.antMatchers("/copa/listar").access("hasRole('CORREDOR') or hasRole('LIDER') or hasRole('JEFE')")
+			.antMatchers("/copa/registrar","/copa/editar/*").access("hasRole('LIDER')")
+			.antMatchers("/copa/borrar/*").access("hasRole('JEFE')")
+			.antMatchers("/equipo/listar").access("hasRole('CORREDOR') or hasRole('LIDER') or hasRole('JEFE')")
+			.antMatchers("/equipo/registrar","/equipo/editar/*").access("hasRole('LIDER')")
+			.antMatchers("/equipo/borrar/*").access("hasRole('JEFE')");
 		
 		http.authorizeRequests().and()
 			.formLogin()
