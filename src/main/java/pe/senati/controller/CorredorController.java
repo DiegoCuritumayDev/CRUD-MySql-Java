@@ -66,7 +66,8 @@ public class CorredorController
 	}
 	
 	@GetMapping("/editar/{corredorId}")
-	public String editar_GET(Map map1,Map map2,Map map3,Model model,@PathVariable Integer corredorId)
+	public String editar_GET(Map map1,Map map2,Map map3,
+			Model model,@PathVariable Integer corredorId)
 	{
 		//corredor cargado
 		Corredor corredorDb=corredorService.findById(corredorId);

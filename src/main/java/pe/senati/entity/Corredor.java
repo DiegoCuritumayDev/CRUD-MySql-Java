@@ -65,8 +65,10 @@ public class Corredor implements Serializable
 	public Corredor() {
 	}
 
-	public Corredor(Integer corredorId, String nombre, Character sexo, LocalDate fnacimiento, String puesto,
-			Double sueldo, String celular, String email, LocalDate fcontrato) {
+	public Corredor(Integer corredorId, String nombre,
+			Character sexo, LocalDate fnacimiento, 
+			String puesto,Double sueldo, String celular, 
+			String email, LocalDate fcontrato) {
 		this.corredorId = corredorId;
 		this.nombre = nombre;
 		this.sexo = sexo;
@@ -77,7 +79,9 @@ public class Corredor implements Serializable
 		this.fcontrato = fcontrato;
 	}
 
-	public Corredor(String nombre, Character sexo, LocalDate fnacimiento, Double sueldo, String celular,
+	public Corredor(String nombre, Character sexo, 
+			LocalDate fnacimiento, Double sueldo, 
+			String celular,
 			String email, LocalDate fcontrato) {
 		this.nombre = nombre;
 		this.sexo = sexo;

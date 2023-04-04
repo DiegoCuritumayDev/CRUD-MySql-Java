@@ -53,7 +53,8 @@ public class ConyugeController
 	}
 	
 	@GetMapping("/editar/{conyugeId}")
-	public String editar_GET(Map map,Model model,@PathVariable Integer conyugeId) 
+	public String editar_GET(Map map,Model model,
+			@PathVariable Integer conyugeId) 
 	{
 		Conyuge conyugeDb=conyugeService.findById(conyugeId);
 		
@@ -72,7 +73,8 @@ public class ConyugeController
 	}
 	
 	@GetMapping("/borrar/{conyugeId}")
-	public String borrar_GET(Model model,@PathVariable Integer conyugeId)
+	public String borrar_GET(Model model,
+			@PathVariable Integer conyugeId)
 	{
 		Conyuge conyugeDb=conyugeService.findById(conyugeId);
 		

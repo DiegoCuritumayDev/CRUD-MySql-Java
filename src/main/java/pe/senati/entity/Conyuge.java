@@ -31,13 +31,16 @@ public class Conyuge implements Serializable
 	private String celular;
 	
 	@OneToOne
-	@JoinColumn(name="corredor_id",unique=true,nullable=false)
+	@JoinColumn(name="corredor_id",
+		unique=true,nullable=false)
 	private Corredor corredor;
 	
 	public Conyuge() {
 	}
 
-	public Conyuge(Integer conyugeId, String nombreAp, Long dni, String celular) {
+	public Conyuge(Integer conyugeId, 
+			String nombreAp, Long dni, 
+			String celular) {
 		this.conyugeId = conyugeId;
 		this.nombreAp = nombreAp;
 		this.dni = dni;
