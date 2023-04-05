@@ -19,6 +19,7 @@
 	
 	<form:form name="" method="post" action="" modelAttribute="copa">
 		ID: <form:input class="idLabel" type="text" path="copaId" readonly="true"/> <br><br>
+		Nombre de Copa <form:input type="text" path="nombreCo"/> <br><br>
 		Fecha de Apertura: <form:input type="date" path="fapertura"/> <br><br>
 		Fecha de Clausura: <form:input type="date" path="fclausura"/> <br><br>
 		Valor del Premio: <form:input type="number" path="vpremio"/> <br><br>
